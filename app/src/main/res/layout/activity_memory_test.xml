@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Memory Benchmark (Native)"
+            android:textSize="22sp"
+            android:paddingBottom="10dp" />
+
+        <!-- ================= LATENCY ================= -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Latență memorie (Pointer Chasing)" />
+
+        <EditText
+            android:id="@+id/inputLatencySize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Dimensiune buffer (bytes)"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/inputLatencyIter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Număr iterații"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/btnTestLatency"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rulează test latență" />
+
+        <EditText
+            android:id="@+id/txtRezLatency"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Rezultat"
+            android:enabled="false" />
+
+        <!-- ================= READ ================= -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bandwidth citire"
+            android:layout_marginTop="20dp" />
+
+        <EditText
+            android:id="@+id/inputReadSize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Dimensiune buffer (bytes)"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/inputReadIter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Număr iterații"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/btnTestRead"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rulează citire memorie" />
+
+        <EditText
+            android:id="@+id/txtRezRead"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Rezultat"
+            android:enabled="false" />
+
+        <!-- ================= WRITE ================= -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bandwidth scriere"
+            android:layout_marginTop="20dp" />
+
+        <EditText
+            android:id="@+id/inputWriteSize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Dimensiune buffer (bytes)"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/inputWriteIter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Număr iterații"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/btnTestWrite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rulează scriere memorie" />
+
+        <EditText
+            android:id="@+id/txtRezWrite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Rezultat"
+            android:enabled="false" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+       
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CPU Benchmark (Native + Kotlin)"
+            android:textSize="22sp"
+            android:paddingBottom="10dp" />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fibonacci:" />
+
+        <EditText
+            android:id="@+id/inputFib"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Introdu N (max recomandat 45)"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/btnTestFib"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rulează Fibonacci (C)" />
+
+        <EditText
+            android:id="@+id/txtRezFib"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Rezultat"
+            android:enabled="false" />
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Înmulțire Matrice INT:" 
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/inputMatrixInt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Dimensiune matrice NxN"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/btnTestMatrixInt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rulează Matrix INT (C)" />
+
+        <EditText
+            android:id="@+id/txtRezMatrixInt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Rezultat"
+            android:enabled="false" />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Înmulțire Matrice FLOAT:"
+            android:layout_marginTop="20dp" />
+
+        <EditText
+            android:id="@+id/inputMatrixFloat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Dimensiune matrice NxN"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/btnTestMatrixFloat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rulează Matrix FLOAT (C)" />
+
+        <EditText
+            android:id="@+id/txtRezMatrixFloat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Rezultat"
+            android:enabled="false" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quicksort:" 
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/inputSort"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Dimensiune vector"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/btnTestSort"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rulează Quicksort (C)" />
+
+        <EditText
+            android:id="@+id/txtRezSort"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Rezultat"
+            android:enabled="false" />
+
+    </LinearLayout>
+</ScrollView>

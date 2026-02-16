@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/deviceInfoText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/scoreText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="26sp"
+        android:textColor="@android:color/holo_red_dark" />
+
+    <Button
+        android:id="@+id/cpuGraphs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CPU Graphs"/>
+
+    <Button
+        android:id="@+id/memGraphs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Memory Graphs"/>
+
+    <Button
+        android:id="@+id/gpuGraphs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GPU Graphs"/>
+
+    <Button
+        android:id="@+id/compareBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Compare Results"/>
+
+    <Button
+        android:id="@+id/runBench"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Run all benchmarks"/>
+
+    <com.benchmarkandroidscc.app.ui.gpu.GraphicView
+        android:id="@+id/gpuView"
+        android:layout_width="1dp"
+        android:layout_height="1dp" />
+
+</LinearLayout>

@@ -1,0 +1,16 @@
+.idea/
+.gradle/
+*.iml
+.kotlin/
+
+build/
+app/build/
+
+local.properties
+
+*.log
+captures/
+
+# System files
+.DS_Store
+Thumbs.db

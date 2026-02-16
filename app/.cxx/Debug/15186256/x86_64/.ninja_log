@@ -1,0 +1,5 @@
+# ninja log v5
+1	188	7849881890212579	CMakeFiles/cpu_benchmark.dir/cpu_benchmark.c.o	ba22089397177aff
+190	326	7849881891648305	D:/an III/SSC p/BenchmarkAndroidSSC/app/build/intermediates/cxx/Debug/15186256/obj/x86_64/libcpu_benchmark.so	37c9a92a9daab073
+14	1057	7859398626615324	CMakeFiles/cpu_benchmark.dir/cpu_benchmark.c.o	ba22089397177aff
+1057	1388	7859398630044686	D:/an III/SSC p/BenchmarkAndroidSSC/app/build/intermediates/cxx/Debug/15186256/obj/x86_64/libcpu_benchmark.so	37c9a92a9daab073

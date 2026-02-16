@@ -1,0 +1,7 @@
+[
+{
+  "directory": "D:/an III/SSC p/BenchmarkAndroidSSC/app/.cxx/Debug/1cd2f6t5/x86",
+  "command": "C:\\Users\\Laura\\AppData\\Local\\Android\\Sdk\\ndk\\27.0.12077973\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe --target=i686-none-linux-android26 --sysroot=C:/Users/Laura/AppData/Local/Android/Sdk/ndk/27.0.12077973/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dc_benchmark_EXPORTS -I\"D:/an III/SSC p/BenchmarkAndroidSSC/app/src/main/cpp\" -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -fno-limit-debug-info  -fPIC -o CMakeFiles\\c_benchmark.dir\\c_benchmark.c.o -c \"D:\\an III\\SSC p\\BenchmarkAndroidSSC\\app\\src\\main\\cpp\\c_benchmark.c\"",
+  "file": "D:\\an III\\SSC p\\BenchmarkAndroidSSC\\app\\src\\main\\cpp\\c_benchmark.c"
+}
+]
