@@ -5,20 +5,9 @@ A native Android benchmarking application developed in **Kotlin** and **C/C++ (N
 ---
 
 # Overview
+This project aims to analyze and measure the performance of modern Android devices by implementing a set of low-level benchmark tests. The application evaluates computational power, memory subsystem efficiency, GPU rendering performance, and hardware configuration information, while also providing graphical visualization and comparison between devices.
 
-This project measures Android device performance using low-level benchmark tests focused on:
-- CPU computation performance
-- Memory latency and bandwidth
-- GPU rendering performance
-- Hardware and system information
-
-The application analyzes how:
-- cache hierarchy,
-- memory access patterns,
-- processor architecture,
-- and graphics throughput
-
-influence overall device performance.
+The benchmark focuses on understanding how processor architecture, cache hierarchy, memory latency, and graphics throughput influence real-world performance.
 
 ---
 
@@ -94,31 +83,6 @@ The application retrieves:
 
 ---
 
-# Performance Measurement
-
-## Java / Kotlin Timing
-
-```java
-long start = System.nanoTime();
-
-// tested operation
-
-long duration = System.nanoTime() - start;
-```
-
-`System.nanoTime()` provides a monotonic high-resolution timer independent of system clock changes.
-
----
-
-## Native Timing
-
-Native benchmarks use:
-- `clock_gettime(CLOCK_MONOTONIC)`
-
-This provides stable and precise timing measurements for low-level performance tests.
-
----
-
 # Memory Benchmarking Concepts
 
 ## Pointer Chasing
@@ -143,19 +107,7 @@ Sequential traversal of large memory regions allows the CPU to:
 - maximize throughput,
 - and efficiently use hardware prefetchers.
 
----
-
-## Cache Hierarchy
-
-Modern processors use multiple cache levels:
-- L1 Cache
-- L2 Cache
-- L3 Cache
-- RAM
-
 When data is not found in one cache level (**cache miss**), the request moves to the next level, increasing access latency.
-
----
 
 ## Sequential vs Random Access
 
@@ -190,25 +142,6 @@ As dataset size increases:
 - memory latency increases,
 - and execution time grows significantly.
 
----
-
-# System Information APIs
-
-## CPU Core Count
-
-```java
-Runtime.getRuntime().availableProcessors()
-```
-
-Returns the number of processor cores available to the application.
-
----
-
-## RAM Information
-
-```java
-ActivityManager.MemoryInfo
-```
 
 Provides:
 - total RAM,
@@ -216,25 +149,6 @@ Provides:
 - low memory threshold.
 
 ---
-
-## Device Information
-
-```java
-Build.MODEL
-Build.VERSION.RELEASE
-```
-
-Returns:
-- device model,
-- Android version.
-
----
-
-## GPU Information
-
-```java
-glGetString(GL_RENDERER)
-```
 
 Returns the GPU renderer name using OpenGL ES.
 
@@ -250,3 +164,14 @@ app/
  ├── res/
  └── build.gradle
 ```
+---
+
+# Build Process
+
+The Android application compilation pipeline includes:
+
+1. Kotlin source compilation to JVM bytecode
+2. Conversion to `.dex` bytecode via D8/R8
+3. Packaging resources and binaries into:
+   - `.apk`
+   - `.aab`
